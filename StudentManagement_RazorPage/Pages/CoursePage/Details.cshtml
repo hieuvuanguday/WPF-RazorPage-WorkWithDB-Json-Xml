@@ -1,0 +1,59 @@
+﻿@page
+@model StudentManagement_RazorPage.Pages.CoursePage.DetailsModel
+
+@{
+    ViewData["Title"] = "Course Details";
+
+    int roleID = int.Parse(HttpContext.Session.GetString("RoleID"));
+    if (roleID != 1 && roleID != 2)
+    {
+        Response.Redirect("../Permission");
+    }
+}
+
+<h1 class="text-center" style="color: #4b4b4b;">Course Details</h1>
+
+<div class="container mt-4">
+    <h4 style="color: #42c2f5;">Course Information</h4>
+    <hr style="border-top: 2px solid #42c2f5;" />
+
+    <dl class="row">
+        <dt class="col-sm-3" style="color: #4b4b4b;">
+            @Html.DisplayNameFor(model => model.Course.CourseName)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Course.CourseName)
+        </dd>
+
+        <dt class="col-sm-3" style="color: #4b4b4b;">
+            @Html.DisplayNameFor(model => model.Course.Credits)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Course.Credits)
+        </dd>
+
+        <dt class="col-sm-3" style="color: #4b4b4b;">
+            @Html.DisplayNameFor(model => model.Course.StartDate)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Course.StartDate)
+        </dd>
+
+        <dt class="col-sm-3" style="color: #4b4b4b;">
+            @Html.DisplayNameFor(model => model.Course.EndDate)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Course.EndDate)
+        </dd>
+    </dl>
+</div>
+
+<div class="container mt-3">
+    <div class="d-flex justify-content-start">
+        @if (roleID == 1)
+        {
+            <a asp-page="./Edit" asp-route-id="@Model.Course.CourseId" class="btn btn-primary me-3" style="background-color: #42c2f5; border-color: #42c2f5;">Edit</a>
+        }
+        <a asp-page="./Index" class="btn btn-secondary" style="background-color: #f0f0f5; border-color: #42c2f5; color: #4b4b4b;">Back to List</a>
+    </div>
+</div>

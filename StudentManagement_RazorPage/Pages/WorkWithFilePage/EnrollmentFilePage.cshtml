@@ -1,0 +1,93 @@
+﻿@page
+@model StudentManagement_RazorPage.Pages.WorkWithFilePage.EnrollmentFilePageModel
+@{
+    ViewData["Title"] = "Enrollment Information";
+
+    int roleID = int.Parse(HttpContext.Session.GetString("RoleID"));
+    if (roleID != 1 && roleID != 2)
+    {
+        Response.Redirect("../Permission");
+    }
+}
+
+<h1>Enrollment Information</h1>
+
+<div class="container mt-4">
+    <a asp-page="../WorkWithFilePage/Upload" class="btn btn-secondary">Back</a>
+
+    @if (Model.Enrollments != null && Model.Enrollments.Count > 0)
+    {
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Enrollment ID</th>
+                    <th>Student ID</th>
+                    <th>Course ID</th>
+                    <th>Enrollment Date</th>
+                    <th>Grade</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var enrollment in Model.Enrollments)
+                {
+                    <tr>
+                        <td>@enrollment.EnrollmentId</td>
+                        <form method="post" asp-page-handler="Edit">
+                        <td>
+                            <input type="hidden" name="enrollmentId" value="@enrollment.EnrollmentId" />
+                            <input type="number" class="form-control" name="studentId" value="@enrollment.StudentId" required />
+                        </td>
+                        <td>
+                            <input type="number" class="form-control" name="courseId" value="@enrollment.CourseId" required />
+                        </td>
+                        <td>
+                            <input type="date" class="form-control" name="enrollmentDate" value="@enrollment.EnrollmentDate.ToString("yyyy-MM-dd")" required />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" name="grade" value="@enrollment.Grade" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" name="status" value="@enrollment.Status" required />
+                        </td>
+                        <td>
+                            <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                            <button class="btn btn-danger btn-sm" asp-page-handler="Delete" asp-route-id="@enrollment.EnrollmentId">Delete</button>
+                        </td>
+                        </form>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <form method="post" asp-page-handler="Create">
+            <h3>Create New Enrollment</h3>
+            <div class="mb-3">
+                <label for="studentId" class="form-label">Student ID</label>
+                <input type="number" class="form-control" id="studentId" name="StudentId" required />
+            </div>
+            <div class="mb-3">
+                <label for="courseId" class="form-label">Course ID</label>
+                <input type="number" class="form-control" id="courseId" name="CourseId" required />
+            </div>
+            <div class="mb-3">
+                <label for="enrollmentDate" class="form-label">Enrollment Date</label>
+                <input type="date" class="form-control" id="enrollmentDate" name="EnrollmentDate" required />
+            </div>
+            <div class="mb-3">
+                <label for="grade" class="form-label">Grade</label>
+                <input type="text" class="form-control" id="grade" name="Grade" />
+            </div>
+            <div class="mb-3">
+                <label for="status" class="form-label">Status</label>
+                <input type="text" class="form-control" id="status" name="Status" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    }
+    else
+    {
+        <p>No enrollment information found.</p>
+    }
+</div>

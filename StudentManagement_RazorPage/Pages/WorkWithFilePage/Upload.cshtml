@@ -1,0 +1,27 @@
+﻿@page
+@model StudentManagement_RazorPage.Pages.WorkWithFilePage.UploadModel
+@{
+    ViewData["Title"] = "Upload File";
+
+    int roleID = int.Parse(HttpContext.Session.GetString("RoleID"));
+    if (roleID != 1 && roleID != 2)
+    {
+        Response.Redirect("../Permission");
+    }
+}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between">
+        <a asp-page="../SelectionModePage" class="btn btn-primary" style="background-color: #bdc5f5; border-color: #bdc5f5;">Back</a>
+    </div>
+
+    <h1 class="text-center" style="color: #4b4b4b;">Upload File</h1>
+    <div class="d-flex align-items-end">
+        <form id="uploadForm" method="post" enctype="multipart/form-data" class="me-2">
+            <div class="mb-3">
+                <label for="fileUpload" class="form-label">Choose a file to upload</label>
+                <input type="file" class="form-control" id="fileUpload" name="fileUpload" required>
+            </div>
+        </form>
+        <button type="submit" class="btn btn-primary" style="background-color: #bdc5f5; border-color: #bdc5f5; margin-bottom: 15px" form="uploadForm">Upload</button>
+    </div>
+</div>

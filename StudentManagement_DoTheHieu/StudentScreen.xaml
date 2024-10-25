@@ -1,0 +1,53 @@
+﻿<Page x:Class="StudentManagement_DoTheHieu.StudentScreen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StudentManagement_DoTheHieu"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="Student List"
+      Loaded="Page_Loaded">
+    <Grid Background="#bcb5f5">
+        <Label x:Name="lblHeader" Content="STUDENT PROFILE MANAGEMENT" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Height="37" Width="291" FontSize="16" FontWeight="Bold"/>
+
+        <Label x:Name="lblStudentID" Content="Student ID" HorizontalAlignment="Left" Margin="60,90,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtStudentID" IsReadOnly="True" HorizontalAlignment="Left" Margin="150,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
+
+        <Label x:Name="lblFullName" Content="FullName" HorizontalAlignment="Left" Margin="60,130,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFullName" HorizontalAlignment="Left" Margin="150,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,170,0,0">
+            <TextBlock Text="Select Gender:" Margin="5,0,15,10"/>
+            <RadioButton Content="Male" GroupName="Gender" Name="rbMale" Margin="0,2,15,0" IsChecked="True"/>
+            <RadioButton Content="Female" GroupName="Gender" Name="rbFemale" Margin="0,2,0,0"/>
+        </StackPanel>
+
+        <Label x:Name="lblBirthday" Content="Birthday" HorizontalAlignment="Left" Margin="60,200,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpkBirthday" HorizontalAlignment="Left" Margin="150,200,0,0" VerticalAlignment="Top" Width="155"/>
+
+        <Label x:Name="lblPhoneNumber" Content="Phone Number" HorizontalAlignment="Left" Margin="450,90,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPhoneNumber" HorizontalAlignment="Left" Margin="550,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="292"/>
+
+        <Label x:Name="lblEmail" Content="Email" HorizontalAlignment="Left" Margin="450,130,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="550,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="292"/>
+
+        <Label x:Name="lblAddress" Content="Address" HorizontalAlignment="Left" Margin="450,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Margin="550,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" Height="21"/>
+
+        <Label x:Name="lblStatus" Content="Status" HorizontalAlignment="Left" Margin="450,200,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbxStatus" HorizontalAlignment="Left" Margin="550,205,0,0" VerticalAlignment="Top" Width="140" SelectedIndex="0">
+            <ComboBoxItem Content="Active" />
+            <ComboBoxItem Content="Inactive" />
+        </ComboBox>
+
+        <DataGrid x:Name="dgvStudenProfile" SelectionChanged="dgvStudenProfile_SelectionChanged" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="60,253,58,215" IsReadOnly="True"/>
+
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="60,550,0,0" VerticalAlignment="Top" Height="30" Width="80" Background="#FF8481FF" Click="btnSearch_Click"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="150,550,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="431" Height="30"/>
+
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="600,550,0,0" VerticalAlignment="Top" Height="30" Width="80" Background="#FF51FF35" Click="btnAdd_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="700,550,0,0" VerticalAlignment="Top" Height="30" Width="80" Background="#FFFFF322" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="800,550,0,0" VerticalAlignment="Top" Height="30" Width="80" Background="#FFF6914F" Click="btnDelete_Click"/>
+    </Grid>
+</Page>

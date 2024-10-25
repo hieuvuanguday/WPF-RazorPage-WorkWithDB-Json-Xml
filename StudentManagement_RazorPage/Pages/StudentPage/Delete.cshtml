@@ -1,0 +1,80 @@
+﻿@page
+@model StudentManagement_RazorPage.Pages.StudentPage.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+
+    int roleID = int.Parse(HttpContext.Session.GetString("RoleID"));
+    if (roleID != 1)
+    {
+        Response.Redirect("../Permission");
+    }
+}
+
+<h1 class="text-center" style="color: #4b4b4b;">Delete Student</h1>
+
+<h3 class="text-center text-danger mb-4">Are you sure you want to delete this?</h3>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h4 class="text-muted mb-4">Student Details</h4>
+            <hr style="border-color: #bdc5f5;" />
+
+            <dl class="row">
+                <dt class="col-sm-4" style="color: #4b4b4b;">
+                    @Html.DisplayNameFor(model => model.Student.FullName)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Student.FullName)
+                </dd>
+                <dt class="col-sm-4" style="color: #4b4b4b;">
+                    @Html.DisplayNameFor(model => model.Student.DateOfBirth)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Student.DateOfBirth)
+                </dd>
+                <dt class="col-sm-4" style="color: #4b4b4b;">
+                    @Html.DisplayNameFor(model => model.Student.Gender)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Student.Gender)
+                </dd>
+                <dt class="col-sm-4" style="color: #4b4b4b;">
+                    @Html.DisplayNameFor(model => model.Student.PhoneNumber)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Student.PhoneNumber)
+                </dd>
+                <dt class="col-sm-4" style="color: #4b4b4b;">
+                    @Html.DisplayNameFor(model => model.Student.Email)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Student.Email)
+                </dd>
+                <dt class="col-sm-4" style="color: #4b4b4b;">
+                    @Html.DisplayNameFor(model => model.Student.Address)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Student.Address)
+                </dd>
+                <dt class="col-sm-4" style="color: #4b4b4b;">
+                    @Html.DisplayNameFor(model => model.Student.Status)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Student.Status)
+                </dd>
+            </dl>
+
+            <form method="post" class="mt-4">
+                <input type="hidden" asp-for="Student.StudentId" />
+                <div class="text-center">
+                    <input type="submit" value="Delete" class="btn btn-danger w-50 mb-3" />
+                    <br />
+                    <a asp-page="./Index" class="btn btn-secondary" style="background-color: #f0f0f5; border-color: #bdc5f5; color: #4b4b4b;">Back to List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,143 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StudentManagement_RazorPage
+build_property.RootNamespace = StudentManagement_RazorPage
+build_property.ProjectDir = D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_RazorPage\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_RazorPage
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/CoursePage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlUGFnZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/CoursePage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlUGFnZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/CoursePage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlUGFnZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/CoursePage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlUGFnZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/CoursePage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlUGFnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/EnrollmentPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudFBhZ2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/EnrollmentPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudFBhZ2VcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/EnrollmentPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudFBhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/EnrollmentPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudFBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/EnrollmentPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5yb2xsbWVudFBhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/Permission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVybWlzc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/SelectionModePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsZWN0aW9uTW9kZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/StudentPage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFBhZ2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/StudentPage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFBhZ2VcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/StudentPage/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFBhZ2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/StudentPage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFBhZ2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/StudentPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFBhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/WorkWithFilePage/CourseFilePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya1dpdGhGaWxlUGFnZVxDb3Vyc2VGaWxlUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/WorkWithFilePage/EnrollmentFilePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya1dpdGhGaWxlUGFnZVxFbnJvbGxtZW50RmlsZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/WorkWithFilePage/StudentFilePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya1dpdGhGaWxlUGFnZVxTdHVkZW50RmlsZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/WorkWithFilePage/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya1dpdGhGaWxlUGFnZVxVcGxvYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/12-CN7/PRN221-FALL24/Assignment/asm_01/WPF_DoTheHieu/StudentManagement_RazorPage/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lity4xquav

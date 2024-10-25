@@ -1,0 +1,82 @@
+﻿@page
+@model StudentManagement_RazorPage.Pages.StudentPage.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+
+    int roleID = int.Parse(HttpContext.Session.GetString("RoleID"));
+    if (roleID != 1)
+    {
+        Response.Redirect("../Permission");
+    }
+}
+
+<h1 class="text-center" style="color: #4b4b4b;">Edit Student</h1>
+
+<h4 class="text-muted text-center mb-4">Student Information</h4>
+<hr style="border-color: #bdc5f5;">
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form method="post" class="shadow p-4 mb-4 bg-white rounded" style="border: 1px solid #bdc5f5;">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <input type="hidden" asp-for="Student.StudentId" />
+
+            <div class="form-group mb-3">
+                <label asp-for="Student.FullName" class="control-label" style="color: #4b4b4b;"></label>
+                <input asp-for="Student.FullName" class="form-control" style="border-color: #bdc5f5;" />
+                <span asp-validation-for="Student.FullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Student.DateOfBirth" class="control-label" style="color: #4b4b4b;"></label>
+                <input asp-for="Student.DateOfBirth" class="form-control" style="border-color: #bdc5f5;" />
+                <span asp-validation-for="Student.DateOfBirth" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Student.Gender" class="control-label" style="color: #4b4b4b;"></label>
+                <input asp-for="Student.Gender" class="form-control" style="border-color: #bdc5f5;" />
+                <span asp-validation-for="Student.Gender" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Student.PhoneNumber" class="control-label" style="color: #4b4b4b;"></label>
+                <input asp-for="Student.PhoneNumber" class="form-control" style="border-color: #bdc5f5;" />
+                <span asp-validation-for="Student.PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Student.Email" class="control-label" style="color: #4b4b4b;"></label>
+                <input asp-for="Student.Email" class="form-control" style="border-color: #bdc5f5;" />
+                <span asp-validation-for="Student.Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Student.Address" class="control-label" style="color: #4b4b4b;"></label>
+                <input asp-for="Student.Address" class="form-control" style="border-color: #bdc5f5;" />
+                <span asp-validation-for="Student.Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Student.Status" class="control-label" style="color: #4b4b4b;"></label>
+                <input asp-for="Student.Status" class="form-control" style="border-color: #bdc5f5;" />
+                <span asp-validation-for="Student.Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3 text-center">
+                <input type="submit" value="Save" class="btn btn-primary w-50" style="background-color: #bdc5f5; border-color: #bdc5f5;" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-page="./Index" class="btn btn-secondary" style="background-color: #f0f0f5; border-color: #bdc5f5; color: #4b4b4b;">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

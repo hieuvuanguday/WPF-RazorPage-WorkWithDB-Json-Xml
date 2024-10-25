@@ -1,0 +1,24 @@
+﻿<Window x:Class="StudentManagement_DoTheHieu.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentManagement_DoTheHieu"
+        mc:Ignorable="d"
+        Title="MainMenu" Height="800" Width="1000" Background="#bdc5f5">
+    <Grid>
+        <Frame x:Name="frMain" VerticalAlignment="Stretch" NavigationUIVisibility="Visible"/>
+        <Button Content="Student" Name="btnStudent" Click="btnStudent_Click"
+        HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,0,0,50"
+        Height="30" Width="80" Background="#7184e7" Foreground="White" FontWeight="Bold"/>
+        <Button Content="Course" Name="btnCourse" Click="btnCourse_Click"
+        HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="140,0,0,50"
+        Height="30" Width="80" Background="#FF0000" Foreground="White" FontWeight="Bold"/>
+        <Button Content="Enrollment" Name="btnEnrollment" Click="btnEnrollment_Click"
+        HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="230,0,0,50"
+        Height="30" Width="80" Background="#008000" Foreground="White" FontWeight="Bold"/>
+        <Button Content="Exit" Name="btnExit" Click="btnExit_Click"
+        HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="320,0,0,50"
+        Height="30" Width="80" Background="#A52A2A" Foreground="White" FontWeight="Bold"/>
+    </Grid>
+</Window>

@@ -1,0 +1,85 @@
+﻿@page
+@model StudentManagement_RazorPage.Pages.WorkWithFilePage.CourseFilePageModel
+@{
+    ViewData["Title"] = "Course Information";
+
+    int roleID = int.Parse(HttpContext.Session.GetString("RoleID"));
+    if (roleID != 1 && roleID != 2)
+    {
+        Response.Redirect("../Permission");
+    }
+}
+
+<h1>Course Information</h1>
+
+<div class="container mt-4">
+    <a asp-page="../WorkWithFilePage/Upload" class="btn btn-secondary">Back</a>
+
+    @if (Model.Courses != null && Model.Courses.Count > 0)
+    {
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var course in Model.Courses)
+                {
+                    <tr>
+                        <td>@course.CourseId</td>
+                        <form method="post" asp-page-handler="Edit">
+                            <td>
+                                <input type="hidden" name="courseId" value="@course.CourseId" />
+                                <input type="text" class="form-control" name="courseName" value="@course.CourseName" required />
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="credits" value="@course.Credits" required />
+                            </td>
+                            <td>
+                                <input type="date" class="form-control" name="startDate" value="@course.StartDate.ToString("yyyy-MM-dd")" required />
+                            </td>
+                            <td>
+                                <input type="date" class="form-control" name="endDate" value="@course.EndDate.ToString("yyyy-MM-dd")" required />
+                            </td>
+                            <td>
+                                <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                                <button class="btn btn-danger btn-sm" asp-page-handler="Delete" asp-route-id="@course.CourseId">Delete</button>
+                            </td>
+                        </form>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <form method="post" asp-page-handler="Create">
+            <h3>Create New Course</h3>
+            <div class="mb-3">
+                <label for="courseName" class="form-label">Course Name</label>
+                <input type="text" class="form-control" id="courseName" name="CourseName" required />
+            </div>
+            <div class="mb-3">
+                <label for="credits" class="form-label">Credits</label>
+                <input type="number" class="form-control" id="credits" name="Credits" required />
+            </div>
+            <div class="mb-3">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input type="date" class="form-control" id="startDate" name="StartDate" required />
+            </div>
+            <div class="mb-3">
+                <label for="endDate" class="form-label">End Date</label>
+                <input type="date" class="form-control" id="endDate" name="EndDate" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    }
+    else
+    {
+        <p>No course information found.</p>
+    }
+</div>

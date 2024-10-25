@@ -1,0 +1,68 @@
+﻿@page
+@model StudentManagement_RazorPage.Pages.CoursePage.EditModel
+
+@{
+    ViewData["Title"] = "Edit Course";
+
+    int roleID = int.Parse(HttpContext.Session.GetString("RoleID"));
+    if (roleID != 1)
+    {
+        Response.Redirect("../Permission");
+    }
+}
+
+<h1 class="text-center" style="color: #4b4b4b;">Edit Course</h1>
+
+<h4 style="color: #42c2f5;">Course Information</h4>
+<hr style="border-top: 2px solid #42c2f5;" />
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Course.CourseId" />
+
+                <div class="form-group">
+                    <label asp-for="Course.CourseName" class="control-label"></label>
+                    <input asp-for="Course.CourseName" class="form-control" />
+                    <span asp-validation-for="Course.CourseName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Course.Credits" class="control-label"></label>
+                    <input asp-for="Course.Credits" class="form-control" />
+                    <span asp-validation-for="Course.Credits" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Course.StartDate" class="control-label"></label>
+                    <input asp-for="Course.StartDate" class="form-control" />
+                    <span asp-validation-for="Course.StartDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Course.EndDate" class="control-label"></label>
+                    <input asp-for="Course.EndDate" class="form-control" />
+                    <span asp-validation-for="Course.EndDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" style="background-color: #42c2f5; border-color: #42c2f5;" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <div>
+        <a asp-page="./Index" class="btn btn-secondary" style="background-color: #f0f0f5; border-color: #42c2f5; color: #4b4b4b;">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

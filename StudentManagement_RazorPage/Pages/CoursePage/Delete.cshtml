@@ -1,0 +1,57 @@
+﻿@page
+@model StudentManagement_RazorPage.Pages.CoursePage.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete Course";
+
+    int roleID = int.Parse(HttpContext.Session.GetString("RoleID"));
+    if (roleID != 1)
+    {
+        Response.Redirect("../Permission");
+    }
+}
+
+<h1 class="text-center" style="color: #4b4b4b;">Delete Course</h1>
+
+<div class="container mt-4">
+    <h3 style="color: #42c2f5;">Are you sure you want to delete this course?</h3>
+    <hr style="border-top: 2px solid #42c2f5;" />
+
+    <dl class="row">
+        <dt class="col-sm-3" style="color: #4b4b4b;">
+            @Html.DisplayNameFor(model => model.Course.CourseName)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Course.CourseName)
+        </dd>
+
+        <dt class="col-sm-3" style="color: #4b4b4b;">
+            @Html.DisplayNameFor(model => model.Course.Credits)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Course.Credits)
+        </dd>
+
+        <dt class="col-sm-3" style="color: #4b4b4b;">
+            @Html.DisplayNameFor(model => model.Course.StartDate)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Course.StartDate)
+        </dd>
+
+        <dt class="col-sm-3" style="color: #4b4b4b;">
+            @Html.DisplayNameFor(model => model.Course.EndDate)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Course.EndDate)
+        </dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="Course.CourseId" />
+        <div class="d-flex justify-content-start">
+            <input type="submit" value="Delete" class="btn btn-danger" style="background-color: #dc3545; border-color: #dc3545;" />
+            <a asp-page="./Index" class="btn btn-secondary ms-3" style="background-color: #f0f0f5; border-color: #42c2f5; color: #4b4b4b;">Back to List</a>
+        </div>
+    </form>
+</div>

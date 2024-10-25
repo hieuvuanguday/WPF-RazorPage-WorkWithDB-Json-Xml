@@ -1,0 +1,14 @@
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\bin\Debug\net8.0\Student_BusinessObjects.deps.json
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\bin\Debug\net8.0\Student_BusinessObjects.runtimeconfig.json
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\bin\Debug\net8.0\Student_BusinessObjects.dll
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\bin\Debug\net8.0\Student_BusinessObjects.pdb
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\Student_BusinessObjects.csproj.AssemblyReference.cache
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\Student_BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\Student_BusinessObjects.AssemblyInfoInputs.cache
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\Student_BusinessObjects.AssemblyInfo.cs
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\Student_BusinessObjects.csproj.CoreCompileInputs.cache
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\Student_BusinessObjects.dll
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\refint\Student_BusinessObjects.dll
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\Student_BusinessObjects.pdb
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\Student_BusinessObjects.genruntimeconfig.cache
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_BusinessObjects\obj\Debug\net8.0\ref\Student_BusinessObjects.dll
