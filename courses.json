@@ -1,0 +1,37 @@
+[
+    {
+        "CourseId": 1,
+        "CourseName": "Mathematics 101",
+        "Credits": 3,
+        "StartDate": "2024-01-15T00:00:00",
+        "EndDate": "2024-05-15T00:00:00"
+    },
+    {
+        "CourseId": 2,
+        "CourseName": "Physics 101",
+        "Credits": 4,
+        "StartDate": "2024-01-15T00:00:00",
+        "EndDate": "2024-05-15T00:00:00"
+    },
+    {
+        "CourseId": 3,
+        "CourseName": "Chemistry 101",
+        "Credits": 3,
+        "StartDate": "2024-01-15T00:00:00",
+        "EndDate": "2024-05-15T00:00:00"
+    },
+    {
+        "CourseId": 4,
+        "CourseName": "Biology 101",
+        "Credits": 3,
+        "StartDate": "2024-01-15T00:00:00",
+        "EndDate": "2024-05-15T00:00:00"
+    },
+    {
+        "CourseId": 5,
+        "CourseName": "Computer Science 101",
+        "Credits": 4,
+        "StartDate": "2024-01-15T00:00:00",
+        "EndDate": "2024-05-15T00:00:00"
+    }
+]

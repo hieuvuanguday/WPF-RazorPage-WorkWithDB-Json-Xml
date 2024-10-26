@@ -1,0 +1,37 @@
+[
+    {
+        "EnrollmentId": 1,
+        "StudentId": 1,
+        "CourseId": 1,
+        "EnrollmentDate": "2024-01-10T00:00:00",
+        "Grade": "A",
+        "Status": "Completed"
+    },
+    {
+        "EnrollmentId": 2,
+        "StudentId": 1,
+        "CourseId": 2,
+        "EnrollmentDate": "2024-01-12T00:00:00",
+        "Grade": "B",
+        "Status": "Completed"
+    },
+    {
+        "EnrollmentId": 3,
+        "StudentId": 2,
+        "CourseId": 3,
+        "EnrollmentDate": "2024-01-11T00:00:00",
+        "Grade": "A",
+        "Status": "In Progress"
+    },
+    {
+        "EnrollmentId": 4,
+        "StudentId": 3,
+        "CourseId": 4,
+        "EnrollmentDate": "2024-01-15T00:00:00",
+        "Grade": null,
+        "Status": "In Progress"
+    }
+]
+
+
+

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Enrollments>
+    <Enrollment>
+        <EnrollmentId>1</EnrollmentId>
+        <StudentId>1</StudentId>
+        <CourseId>1</CourseId>
+        <EnrollmentDate>2024-01-10T00:00:00</EnrollmentDate>
+        <Grade>A</Grade>
+        <Status>Completed</Status>
+    </Enrollment>
+    <Enrollment>
+        <EnrollmentId>2</EnrollmentId>
+        <StudentId>1</StudentId>
+        <CourseId>2</CourseId>
+        <EnrollmentDate>2024-01-12T00:00:00</EnrollmentDate>
+        <Grade>B</Grade>
+        <Status>Completed</Status>
+    </Enrollment>
+    <Enrollment>
+        <EnrollmentId>3</EnrollmentId>
+        <StudentId>2</StudentId>
+        <CourseId>3</CourseId>
+        <EnrollmentDate>2024-01-11T00:00:00</EnrollmentDate>
+        <Grade>A</Grade>
+        <Status>In Progress</Status>
+    </Enrollment>
+    <Enrollment>
+        <EnrollmentId>4</EnrollmentId>
+        <StudentId>3</StudentId>
+        <CourseId>4</CourseId>
+        <EnrollmentDate>2024-01-15T00:00:00</EnrollmentDate>
+        <Grade></Grade>
+        <Status>In Progress</Status>
+    </Enrollment>
+</Enrollments>

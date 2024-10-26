@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Students>
+    <Student>
+        <StudentId>1</StudentId>
+        <FullName>Nguyen Van A</FullName>
+        <DateOfBirth>2000-01-01T00:00:00</DateOfBirth>
+        <Gender>Male</Gender>
+        <PhoneNumber>0123456789</PhoneNumber>
+        <Email>nguyenvana@example.com</Email>
+        <Address>123 Main St, Hanoi</Address>
+        <Status>Active</Status>
+    </Student>
+    <Student>
+        <StudentId>2</StudentId>
+        <FullName>Tran Thi B</FullName>
+        <DateOfBirth>2001-02-02T00:00:00</DateOfBirth>
+        <Gender>Female</Gender>
+        <PhoneNumber>0987654321</PhoneNumber>
+        <Email>tranthib@example.com</Email>
+        <Address>456 Side St, Hanoi</Address>
+        <Status>Active</Status>
+    </Student>
+    <Student>
+        <StudentId>3</StudentId>
+        <FullName>Le Van C</FullName>
+        <DateOfBirth>2002-03-03T00:00:00</DateOfBirth>
+        <Gender>Male</Gender>
+        <PhoneNumber>0345678901</PhoneNumber>
+        <Email>levanc@example.com</Email>
+        <Address>789 Center St, Hanoi</Address>
+        <Status>Inactive</Status>
+    </Student>
+</Students>
