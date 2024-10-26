@@ -12,7 +12,15 @@ public partial class Enrollment
 
     public int? CourseId { get; set; }
 
+    [XmlIgnore]
     public DateOnly EnrollmentDate { get; set; }
+
+    [XmlElement("EnrollmentDate")]
+    public string EnrollmentDateXml
+    {
+        get => EnrollmentDate.ToString("yyyy-MM-dd");
+        set => EnrollmentDate = DateOnly.Parse(value);
+    }
 
     public string? Grade { get; set; }
 

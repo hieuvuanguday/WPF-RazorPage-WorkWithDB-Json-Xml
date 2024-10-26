@@ -10,7 +10,15 @@ public partial class Student
 
     public string FullName { get; set; } = null!;
 
+    [XmlIgnore]
     public DateOnly DateOfBirth { get; set; }
+
+    [XmlElement("DateOfBirth")]
+    public string DateOfBirthXml
+    {
+        get => DateOfBirth.ToString("yyyy-MM-dd");
+        set => DateOfBirth = DateOnly.Parse(value);
+    }
 
     public string? Gender { get; set; }
 

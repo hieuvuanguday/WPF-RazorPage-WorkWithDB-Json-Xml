@@ -17,3 +17,4 @@ D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Services\obj\Deb
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Services\obj\Debug\net8.0\refint\Student_Services.dll
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Services\obj\Debug\net8.0\Student_Services.pdb
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Services\obj\Debug\net8.0\ref\Student_Services.dll
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Services\obj\Debug\net8.0\Student_Services.sourcelink.json

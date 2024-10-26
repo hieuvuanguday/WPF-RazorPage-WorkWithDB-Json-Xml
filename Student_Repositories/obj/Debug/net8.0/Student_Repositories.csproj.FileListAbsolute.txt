@@ -15,3 +15,4 @@ D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Repositories\obj
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Repositories\obj\Debug\net8.0\refint\Student_Repositories.dll
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Repositories\obj\Debug\net8.0\Student_Repositories.pdb
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Repositories\obj\Debug\net8.0\ref\Student_Repositories.dll
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\Student_Repositories\obj\Debug\net8.0\Student_Repositories.sourcelink.json

@@ -11,10 +11,25 @@ public partial class Course
     public string CourseName { get; set; } = null!;
 
     public int Credits { get; set; }
-
+    [XmlIgnore]
     public DateOnly StartDate { get; set; }
 
+    [XmlElement("StartDate")]
+    public string StartDateXml
+    {
+        get => StartDate.ToString("yyyy-MM-dd");
+        set => StartDate = DateOnly.Parse(value);
+    }
+
+    [XmlIgnore]
     public DateOnly EndDate { get; set; }
+
+    [XmlElement("EndDate")]
+    public string EndDateXml
+    {
+        get => EndDate.ToString("yyyy-MM-dd");
+        set => EndDate = DateOnly.Parse(value);
+    }
 
     [XmlIgnore]
     public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
