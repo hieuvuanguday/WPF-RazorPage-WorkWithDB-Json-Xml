@@ -42,10 +42,10 @@
                                 <input type="number" class="form-control" name="credits" value="@course.Credits" required />
                             </td>
                             <td>
-                                <input type="date" class="form-control" name="startDate" value="@course.StartDateXml" required />
+                            <input type="date" class="form-control" name="startDate" value="@course.StartDate.ToString("yyyy-MM-dd")" required />
                             </td>
                             <td>
-                                <input type="date" class="form-control" name="endDate" value="@course.EndDateXml" required />
+                            <input type="date" class="form-control" name="endDate" value="@course.EndDate.ToString("yyyy-MM-dd")" required />
                             </td>
                             <td>
                                 <button type="submit" class="btn btn-primary btn-sm">Save</button>

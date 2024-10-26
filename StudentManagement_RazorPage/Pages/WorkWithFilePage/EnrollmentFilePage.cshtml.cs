@@ -25,7 +25,7 @@ namespace StudentManagement_RazorPage.Pages.WorkWithFilePage
             Enrollments = await _fileServices.ReadFileAsync(_filePath);
         }
 
-        public async Task<IActionResult> OnPostCreateAsync(int studentId, int courseId, DateOnly enrollmentDate, string? grade, string status)
+        public async Task<IActionResult> OnPostCreateAsync(int studentId, int courseId, DateTime enrollmentDate, string? grade, string status)
         {
             Enrollments = await _fileServices.ReadFileAsync(_filePath);
 
@@ -57,7 +57,7 @@ namespace StudentManagement_RazorPage.Pages.WorkWithFilePage
             return RedirectToPage();
         }
 
-        public async Task<IActionResult> OnPostEditAsync(int enrollmentId, int studentId, int courseId, DateOnly enrollmentDate, string? grade, string status)
+        public async Task<IActionResult> OnPostEditAsync(int enrollmentId, int studentId, int courseId, DateTime enrollmentDate, string? grade, string status)
         {
             Enrollments = await _fileServices.ReadFileAsync(_filePath);
             var enrollmentToEdit = Enrollments.FirstOrDefault(e => e.EnrollmentId == enrollmentId);

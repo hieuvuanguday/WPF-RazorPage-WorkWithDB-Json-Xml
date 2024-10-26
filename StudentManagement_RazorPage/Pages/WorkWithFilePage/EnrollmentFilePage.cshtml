@@ -43,7 +43,7 @@
                             <input type="number" class="form-control" name="courseId" value="@enrollment.CourseId" required />
                         </td>
                         <td>
-                            <input type="date" class="form-control" name="enrollmentDate" value="@enrollment.EnrollmentDateXml" required />
+                            <input type="date" class="form-control" name="enrollmentDate" value="@enrollment.EnrollmentDate.ToString("yyyy-MM-dd")" required />
                         </td>
                         <td>
                             <input type="text" class="form-control" name="grade" value="@enrollment.Grade" />

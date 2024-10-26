@@ -25,7 +25,7 @@ namespace StudentManagement_RazorPage.Pages.WorkWithFilePage
             Courses = await _fileServices.ReadFileAsync(_filePath);
         }
 
-        public async Task<IActionResult> OnPostCreateAsync(string courseName, int credits, DateOnly startDate, DateOnly endDate)
+        public async Task<IActionResult> OnPostCreateAsync(string courseName, int credits, DateTime startDate, DateTime endDate)
         {
             Courses = await _fileServices.ReadFileAsync(_filePath);
 
@@ -57,7 +57,7 @@ namespace StudentManagement_RazorPage.Pages.WorkWithFilePage
             return RedirectToPage();
         }
 
-        public async Task<IActionResult> OnPostEditAsync(int courseId, string courseName, int credits, DateOnly startDate, DateOnly endDate)
+        public async Task<IActionResult> OnPostEditAsync(int courseId, string courseName, int credits, DateTime startDate, DateTime endDate)
         {
             Courses = await _fileServices.ReadFileAsync(_filePath);
             var courseToEdit = Courses.FirstOrDefault(c => c.CourseId == courseId);

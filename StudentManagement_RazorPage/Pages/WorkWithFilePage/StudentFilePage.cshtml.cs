@@ -23,9 +23,14 @@ namespace StudentManagement_RazorPage.Pages.WorkWithFilePage
         public async Task OnGetAsync()
         {
             Students = await _fileServices.ReadFileAsync(_filePath);
+            Console.WriteLine("Data read from file:");
+            foreach (var student in Students)
+            {
+                Console.WriteLine($"ID: {student.StudentId}, DOB: {student.DateOfBirth}");
+            }
         }
 
-        public async Task<IActionResult> OnPostCreateAsync(string fullName, DateOnly dateOfBirth, string gender, string phoneNumber, string email, string? address, string status)
+        public async Task<IActionResult> OnPostCreateAsync(string fullName, DateTime dateOfBirth, string gender, string phoneNumber, string email, string? address, string status)
         {
             Students = await _fileServices.ReadFileAsync(_filePath);
 
@@ -59,7 +64,7 @@ namespace StudentManagement_RazorPage.Pages.WorkWithFilePage
             return RedirectToPage();
         }
 
-        public async Task<IActionResult> OnPostEditAsync(int studentId, string fullName, DateOnly dateOfBirth, string gender, string phoneNumber, string email, string? address, string status)
+        public async Task<IActionResult> OnPostEditAsync(int studentId, string fullName, DateTime dateOfBirth, string gender, string phoneNumber, string email, string? address, string status)
         {
             Students = await _fileServices.ReadFileAsync(_filePath);
             var studentToEdit = Students.FirstOrDefault(s => s.StudentId == studentId);
