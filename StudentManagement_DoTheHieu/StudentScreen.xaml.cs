@@ -51,7 +51,7 @@ namespace StudentManagement_DoTheHieu
         {
             Student student = new Student();
             student.FullName = txtFullName.Text;
-            student.DateOfBirth = DateOnly.FromDateTime(dpkBirthday.SelectedDate.Value);
+            student.DateOfBirth = dpkBirthday.SelectedDate.Value;
             student.Gender = rbMale.IsChecked == true ? rbMale.Content.ToString() : rbFemale.Content.ToString();
             student.PhoneNumber = txtPhoneNumber.Text;
             student.Email = txtEmail.Text;
@@ -84,7 +84,7 @@ namespace StudentManagement_DoTheHieu
             if (dgvStudenProfile.SelectedItem is Student selectedStudent)
             {
                 selectedStudent.FullName = txtFullName.Text;
-                selectedStudent.DateOfBirth = DateOnly.FromDateTime(dpkBirthday.SelectedDate.Value);
+                selectedStudent.DateOfBirth = dpkBirthday.SelectedDate.Value;
                 selectedStudent.PhoneNumber = txtPhoneNumber.Text;
                 selectedStudent.Email = txtEmail.Text;
                 selectedStudent.Address = txtAddress.Text;
@@ -129,7 +129,7 @@ namespace StudentManagement_DoTheHieu
             {
                 txtStudentID.Text = selectedStudent.StudentId.ToString();
                 txtFullName.Text = selectedStudent.FullName;
-                dpkBirthday.SelectedDate = selectedStudent.DateOfBirth.ToDateTime(TimeOnly.MinValue);
+                dpkBirthday.SelectedDate = selectedStudent.DateOfBirth;
                 txtPhoneNumber.Text = selectedStudent.PhoneNumber;
                 txtEmail.Text = selectedStudent.Email;
                 txtAddress.Text = selectedStudent.Address;

@@ -79,3 +79,4 @@ D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_DoTheH
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_DoTheHieu\obj\Debug\net8.0-windows\CourseScreen.baml
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_DoTheHieu\obj\Debug\net8.0-windows\EnrollmentScreen.baml
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_DoTheHieu\obj\Debug\net8.0-windows\StudentScreen.baml
+D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_DoTheHieu\obj\Debug\net8.0-windows\StudentManagement_DoTheHieu.sourcelink.json

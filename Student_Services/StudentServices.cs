@@ -11,12 +11,10 @@ namespace Student_Services
     public class StudentServices : IStudentServices
     {
         private readonly IStudentRepo iStudentRepo = null;
-        private readonly IFileServices<Student> _fileServices;
 
-        public StudentServices(IFileServices<Student> fileServices)
+        public StudentServices()
         {
             this.iStudentRepo = new StudentRepo();
-            this._fileServices = fileServices;
         }
 
         public bool AddStudent(Student student)

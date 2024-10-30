@@ -11,12 +11,10 @@ namespace Student_Services
     public class CourseServices : ICourseServices
     {
         private readonly ICourseRepo iCourseRepo;
-        private readonly IFileServices<Course> _fileServices;
 
-        public CourseServices(IFileServices<Course> fileServices)
+        public CourseServices()
         {
             this.iCourseRepo = new CourseRepo();
-            this._fileServices = fileServices;
         }
 
         public bool AddCourse(Course course)

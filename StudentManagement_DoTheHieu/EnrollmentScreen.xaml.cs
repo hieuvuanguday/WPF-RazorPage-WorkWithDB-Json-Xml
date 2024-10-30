@@ -62,7 +62,7 @@ namespace StudentManagement_DoTheHieu
             Enrollment enrollment = new Enrollment();
             enrollment.StudentId = int.Parse(txtStudentID.Text.Trim());
             enrollment.CourseId = int.Parse(txtCourseID.Text.Trim());
-            enrollment.EnrollmentDate = DateOnly.FromDateTime(dpkEnrollmentDate.SelectedDate.Value);
+            enrollment.EnrollmentDate = dpkEnrollmentDate.SelectedDate.Value;
             enrollment.Grade = txtGrade.Text.Trim();
             if (cbxStatus.SelectedItem is ComboBoxItem item)
                 enrollment.Status = item.Content.ToString();
@@ -83,7 +83,7 @@ namespace StudentManagement_DoTheHieu
                 selectedEnrollment.EnrollmentId = int.Parse(txtEnrollmentID.Text.Trim());
                 selectedEnrollment.StudentId = int.Parse(txtStudentID.Text.Trim());
                 selectedEnrollment.CourseId = int.Parse(txtCourseID.Text.Trim());
-                selectedEnrollment.EnrollmentDate = DateOnly.FromDateTime(dpkEnrollmentDate.SelectedDate.Value);
+                selectedEnrollment.EnrollmentDate = dpkEnrollmentDate.SelectedDate.Value;
                 selectedEnrollment.Grade = txtGrade.Text.Trim();
                 if (cbxStatus.SelectedItem is ComboBoxItem selectedItem)
                 {
@@ -124,7 +124,7 @@ namespace StudentManagement_DoTheHieu
                 txtEnrollmentID.Text = selectedEnrollment.EnrollmentId.ToString();
                 txtStudentID.Text = selectedEnrollment.StudentId.ToString();
                 txtCourseID.Text = selectedEnrollment.CourseId.ToString();
-                dpkEnrollmentDate.SelectedDate = selectedEnrollment.EnrollmentDate.ToDateTime(TimeOnly.MinValue);
+                dpkEnrollmentDate.SelectedDate = selectedEnrollment.EnrollmentDate;
                 
                 txtGrade.Text = selectedEnrollment.Grade;
                 foreach (ComboBoxItem item in cbxStatus.Items)

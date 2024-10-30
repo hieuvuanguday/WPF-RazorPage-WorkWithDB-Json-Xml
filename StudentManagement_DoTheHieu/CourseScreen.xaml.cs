@@ -62,8 +62,8 @@ namespace StudentManagement_DoTheHieu
             course.CourseName = txtCourseName.Text;
             course.Credits = int.Parse(txtCredit.Text);
 
-            course.StartDate = DateOnly.FromDateTime(dpkStartDate.SelectedDate.Value);
-            course.EndDate = DateOnly.FromDateTime(dpkEndDate.SelectedDate.Value);
+            course.StartDate = dpkStartDate.SelectedDate.Value;
+            course.EndDate = dpkEndDate.SelectedDate.Value;
             
             if (_courseServices.AddCourse(course))
             {
@@ -80,8 +80,8 @@ namespace StudentManagement_DoTheHieu
             {
                 selectedCourse.CourseName = txtCourseName.Text;
                 selectedCourse.Credits = int.Parse(txtCredit.Text);
-                selectedCourse.StartDate = DateOnly.FromDateTime(dpkStartDate.SelectedDate.Value);
-                selectedCourse.EndDate = DateOnly.FromDateTime(dpkEndDate.SelectedDate.Value);
+                selectedCourse.StartDate = dpkStartDate.SelectedDate.Value;
+                selectedCourse.EndDate = dpkEndDate.SelectedDate.Value;
 
                 if (_courseServices.UpdateCourse(selectedCourse))
                 {
@@ -115,8 +115,8 @@ namespace StudentManagement_DoTheHieu
                 txtCourseID.Text = selectedCourse.CourseId.ToString();
                 txtCourseName.Text = selectedCourse.CourseName.ToString();
                 txtCredit.Text = selectedCourse.Credits.ToString();
-                dpkStartDate.SelectedDate = selectedCourse.StartDate.ToDateTime(TimeOnly.MinValue);
-                dpkEndDate.SelectedDate = selectedCourse.EndDate.ToDateTime(TimeOnly.MinValue);
+                dpkStartDate.SelectedDate = selectedCourse.StartDate;
+                dpkEndDate.SelectedDate = selectedCourse.EndDate;
             }
         }
 

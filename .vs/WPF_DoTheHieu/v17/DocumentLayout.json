@@ -1,12 +1,120 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5804586-FE90-47C5-A303-3A5F18F6A23D}|StudentManagement_RazorPage\\StudentManagement_RazorPage.csproj|d:\\12-cn7\\prn221-fall24\\assignment\\asm_01\\wpf_dothehieu\\studentmanagement_razorpage\\data\\enrollment.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F5804586-FE90-47C5-A303-3A5F18F6A23D}|StudentManagement_RazorPage\\StudentManagement_RazorPage.csproj|solutionrelative:studentmanagement_razorpage\\data\\enrollment.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5804586-FE90-47C5-A303-3A5F18F6A23D}|StudentManagement_RazorPage\\StudentManagement_RazorPage.csproj|d:\\12-cn7\\prn221-fall24\\assignment\\asm_01\\wpf_dothehieu\\studentmanagement_razorpage\\data\\courses.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F5804586-FE90-47C5-A303-3A5F18F6A23D}|StudentManagement_RazorPage\\StudentManagement_RazorPage.csproj|solutionrelative:studentmanagement_razorpage\\data\\courses.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C374BD43-B006-443B-A482-F8FC2AB7FF65}|Student_Services\\Student_Services.csproj|d:\\12-cn7\\prn221-fall24\\assignment\\asm_01\\wpf_dothehieu\\student_services\\courseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C374BD43-B006-443B-A482-F8FC2AB7FF65}|Student_Services\\Student_Services.csproj|solutionrelative:student_services\\courseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DAC3FA-B8D7-4982-B7F9-E7B8C3D31F8B}|StudentManagement_DoTheHieu\\StudentManagement_DoTheHieu.csproj|d:\\12-cn7\\prn221-fall24\\assignment\\asm_01\\wpf_dothehieu\\studentmanagement_dothehieu\\studentscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DAC3FA-B8D7-4982-B7F9-E7B8C3D31F8B}|StudentManagement_DoTheHieu\\StudentManagement_DoTheHieu.csproj|solutionrelative:studentmanagement_dothehieu\\studentscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DAC3FA-B8D7-4982-B7F9-E7B8C3D31F8B}|StudentManagement_DoTheHieu\\StudentManagement_DoTheHieu.csproj|d:\\12-cn7\\prn221-fall24\\assignment\\asm_01\\wpf_dothehieu\\studentmanagement_dothehieu\\enrollmentscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DAC3FA-B8D7-4982-B7F9-E7B8C3D31F8B}|StudentManagement_DoTheHieu\\StudentManagement_DoTheHieu.csproj|solutionrelative:studentmanagement_dothehieu\\enrollmentscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0DAC3FA-B8D7-4982-B7F9-E7B8C3D31F8B}|StudentManagement_DoTheHieu\\StudentManagement_DoTheHieu.csproj|d:\\12-cn7\\prn221-fall24\\assignment\\asm_01\\wpf_dothehieu\\studentmanagement_dothehieu\\coursescreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0DAC3FA-B8D7-4982-B7F9-E7B8C3D31F8B}|StudentManagement_DoTheHieu\\StudentManagement_DoTheHieu.csproj|solutionrelative:studentmanagement_dothehieu\\coursescreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "enrollment.xml",
+              "DocumentMoniker": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_RazorPage\\Data\\enrollment.xml",
+              "RelativeDocumentMoniker": "StudentManagement_RazorPage\\Data\\enrollment.xml",
+              "ToolTip": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_RazorPage\\Data\\enrollment.xml",
+              "RelativeToolTip": "StudentManagement_RazorPage\\Data\\enrollment.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-10-30T03:10:12.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "courses.json",
+              "DocumentMoniker": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_RazorPage\\Data\\courses.json",
+              "RelativeDocumentMoniker": "StudentManagement_RazorPage\\Data\\courses.json",
+              "ToolTip": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_RazorPage\\Data\\courses.json",
+              "RelativeToolTip": "StudentManagement_RazorPage\\Data\\courses.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-30T03:09:01.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CourseServices.cs",
+              "DocumentMoniker": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\Student_Services\\CourseServices.cs",
+              "RelativeDocumentMoniker": "Student_Services\\CourseServices.cs",
+              "ToolTip": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\Student_Services\\CourseServices.cs",
+              "RelativeToolTip": "Student_Services\\CourseServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T06:13:25.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnrollmentScreen.xaml.cs",
+              "DocumentMoniker": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_DoTheHieu\\EnrollmentScreen.xaml.cs",
+              "RelativeDocumentMoniker": "StudentManagement_DoTheHieu\\EnrollmentScreen.xaml.cs",
+              "ToolTip": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_DoTheHieu\\EnrollmentScreen.xaml.cs",
+              "RelativeToolTip": "StudentManagement_DoTheHieu\\EnrollmentScreen.xaml.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T06:08:27.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentScreen.xaml.cs",
+              "DocumentMoniker": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_DoTheHieu\\StudentScreen.xaml.cs",
+              "RelativeDocumentMoniker": "StudentManagement_DoTheHieu\\StudentScreen.xaml.cs",
+              "ToolTip": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_DoTheHieu\\StudentScreen.xaml.cs",
+              "RelativeToolTip": "StudentManagement_DoTheHieu\\StudentScreen.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwB0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T06:08:19.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CourseScreen.xaml.cs",
+              "DocumentMoniker": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_DoTheHieu\\CourseScreen.xaml.cs",
+              "RelativeDocumentMoniker": "StudentManagement_DoTheHieu\\CourseScreen.xaml.cs",
+              "ToolTip": "D:\\12-CN7\\PRN221-FALL24\\Assignment\\asm_01\\WPF_DoTheHieu\\StudentManagement_DoTheHieu\\CourseScreen.xaml.cs",
+              "RelativeToolTip": "StudentManagement_DoTheHieu\\CourseScreen.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T06:06:48.196Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

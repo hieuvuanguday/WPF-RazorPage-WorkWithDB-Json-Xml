@@ -291,4 +291,3 @@ D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_RazorP
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_RazorPage\obj\Debug\net8.0\ref\StudentManagement_RazorPage.dll
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_RazorPage\obj\Debug\net8.0\StudentManagement_RazorPage.sourcelink.json
 D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_RazorPage\bin\Debug\net8.0\Data\courses.json
-D:\12-CN7\PRN221-FALL24\Assignment\asm_01\WPF_DoTheHieu\StudentManagement_RazorPage\bin\Debug\net8.0\Data\students.json

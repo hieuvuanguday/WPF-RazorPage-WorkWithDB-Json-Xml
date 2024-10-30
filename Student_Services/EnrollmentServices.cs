@@ -11,12 +11,10 @@ namespace Student_Services
     public class EnrollmentServices : IEnrollmentServices
     {
         private readonly IEnrollmentRepo iEnrollmentRepo;
-        private readonly IFileServices<Enrollment> _fileServices;
 
-        public EnrollmentServices(IFileServices<Enrollment> fileServices)
+        public EnrollmentServices()
         {
             this.iEnrollmentRepo = new EnrollmentRepo();
-            this._fileServices = fileServices;
         }
         public bool AddEnrollment(Enrollment enrollment)
         {
